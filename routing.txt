@@ -1,0 +1,22 @@
+In this routing project, we have few scenarios
+
+s1:
+basic routing,home page implementation
+for routing every project should have app folder, under this folder all the page.js / page.tsx will act as route
+
+s2: 
+create 2 pages for about and profile.
+create a about folder under app, create a page.tsx. this page will be served when run the app alogn with
+"/about"
+
+create a profile folder under app, create a page.tsx. this page will be served when run the app alogn with
+"/profile"
+
+s3: neseted routing, we use blog folder for this,
+we trying to acheive 
+localhost:3000/blog/first, localhost:3000/blog/second
+
+s4: passing data from url and reading in the components
+for the baove scenario, we have used products folder
+inorder to pass the and read those props, [productId] this format is used so that next js understands that
+it is for passing data
