@@ -33,3 +33,6 @@ consider a scenario in which we have nested folders. every feature we have multi
 we end up having multiple number of files. this can be solved by using the dynamic [featureId] route.
 still we have same issue with concepts files as well, this can be solved by using the dynamic [conceptId] route
 this is called  [...slug] folder where we can read both the featureId and conceptId
+
+[[...slug]]- this is catch all segment, in the above scenario, if we navigate to localhost:3000/docs route. we get 404 page.
+if we want to show the docs homepage view then wrap the slug in array braces.
