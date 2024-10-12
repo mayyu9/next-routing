@@ -16,7 +16,8 @@ s3: neseted routing, we use blog folder for this,
 we trying to acheive 
 localhost:3000/blog/first, localhost:3000/blog/second
 
-s4: passing data from url and reading in the components
+s4: Dynamic Routes
+passing data from url and reading in the components
 for the baove scenario, we have used products folder
-inorder to pass the and read those props, [productId] this format is used so that next js understands that
+in order to pass the and read those props, [productId] this format is used so that next js understands that
 it is for passing data
