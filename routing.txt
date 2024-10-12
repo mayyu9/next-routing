@@ -21,3 +21,9 @@ passing data from url and reading in the components
 for the baove scenario, we have used products folder
 in order to pass the and read those props, [productId] this format is used so that next js understands that
 it is for passing data
+
+s5: nested dynamic Routes
+for this use the product folder. here we are trying to acheive
+localhost:3000/product/1/reviews/100
+we have to read the data from the url
+
