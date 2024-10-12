@@ -27,3 +27,9 @@ for this use the product folder. here we are trying to acheive
 localhost:3000/product/1/reviews/100
 we have to read the data from the url
 
+s6: Catch-all segment
+for this we use docs folder
+consider a scenario in which we have nested folders. every feature we have multiple concepts. all share the same layout structure.
+we end up having multiple number of files. this can be solved by using the dynamic [featureId] route.
+still we have same issue with concepts files as well, this can be solved by using the dynamic [conceptId] route
+this is called  [...slug] folder where we can read both the featureId and conceptId
