@@ -45,6 +45,8 @@ refer the reviewId/page.tsx for this example.
 we can have custom not-found.tsx page even at the folder level. if there is a custom not-found at the folder level that not-found page will be rendered.
 
 
-
+s8: File colocation
+refer dashboard folder. if there is no page.tsx file in the folder, then it will throw the error, even not-found page will not be displayed.
+we can define the component outside the app folder and use those ui files in the app Route pages
 
 
