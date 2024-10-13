@@ -36,3 +36,15 @@ this is called  [...slug] folder where we can read both the featureId and concep
 
 [[...slug]]- this is catch all segment, in the above scenario, if we navigate to localhost:3000/docs route. we get 404 page.
 if we want to show the docs homepage view then wrap the slug in array braces.
+
+s7: Custom 404 page
+for this we have to create a page not-found.tsx. Next Js will render this component when we encouter the route which is not found.
+
+We can programtically call this as a function. provided by nextjs. notFound();
+refer the reviewId/page.tsx for this example.
+we can have custom not-found.tsx page even at the folder level. if there is a custom not-found at the folder level that not-found page will be rendered.
+
+
+
+
+
