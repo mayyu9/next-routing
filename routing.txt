@@ -53,4 +53,16 @@ s9: Private folders
 A private folder indicate that it is a private implementation details and should not be considered by the routing system
 the folder and all its subfolders are excluded from routing
 prefix the folder name with an underscore
- 
+
+s10: Route Group
+Route groups allows us to logically group our routes and project files without affecting the URL path structure
+lets implement authentication routes
+-login
+-register
+- forgot password
+
+in order to create the above, we have to create 3 folders (login, register, forgot password) and have a respective page.tsx file for sake of routing.
+using the route group technique, we can group all folders into one foldet auth and nest this folder into those. which end ups to use the below as route
+localhost:3000/auth/login. here we want to acheive localhost:3000/login 
+to acheive this we use the Route group concept, we wrap parent level folder with () this syntax i.e(auth)
+
