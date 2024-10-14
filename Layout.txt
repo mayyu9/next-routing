@@ -12,4 +12,15 @@ How to create layouts?
 
 Nested Layouts:
 in order to have custom layout for any specific page route. add a layout.js/tsx file in that folder.
+refer product folder
+
+Route Group Layout:
+1. uses of route group, to organize the project in such a manner that doesn't affect the url.
+2. To selectively apply a layout to a certain segments while leaving other unchanged
+
+we try this on the auth folder, we already have route group for this folder.
+1. create a folder (with-auth-layout) and move login and register folder into this folder.
+2. create a layout.tsx file, this will rendered when we access the route.
+
+
 
