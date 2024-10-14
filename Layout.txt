@@ -42,4 +42,6 @@ Metadata rules:
 3. when there is metadata in multiple places for the same route, they get combined but page metadata will replace layout metadata, if they have the same properties.
 
  static metadata implemented in the about page folder, implemented page level metadata, which will override root level metadata with page level metadata.
+
+ dynamicmetadata implemented in the product page, where we need to implement different title for each product.
   
