@@ -7,11 +7,25 @@ type props = {
     }
 };
 
-export const generateMetadata = ({ params }: props): Metadata => {
+// export const generateMetadata = ({ params }: props): Metadata => {
+//     return {
+//         title: `Product ${params.productId}`
+//     }
+// };
+
+// using the async await functionality, wehere we resolve API call
+export const generateMetadata = async ({ params }: props): Promise<Metadata> => {
+
+    const title = await new Promise( resolve => {
+        setTimeout( () => {
+            resolve(`This Product is Iphone ${params.productId}`)
+        }, 100)
+    })
     return {
-        title: `Product ${params.productId}`
+        title: `${title}`
     }
 };
+
 // dynamic metadata implementation end
 
 export default function ProductDetailedPage({ params }: props) {
