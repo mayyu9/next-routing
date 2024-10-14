@@ -1,8 +1,15 @@
 Layouts:
 A page is UI that is unique to a route
 
-A layout is ui that is shared between multiple pages in the app..
+A layout is ui that is shared between multiple pages in the app.
+
+Next js auot generates layout.tsx file, even if that file is deleted it will be auto generated on starting the app
 
 How to create layouts?
 1. exporting a react component from layout.js or layout.tsx
 2. that component should accept a children prop that will be populated with a child page during rendering.
+
+
+Nested Layouts:
+in order to have custom layout for any specific page route. add a layout.js/tsx file in that folder.
+
