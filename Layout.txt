@@ -45,3 +45,8 @@ Metadata rules:
 
  dynamicmetadata implemented in the product page, where we need to implement different title for each product.
   
+Navigation:
+Navigation is acheived in nextjs by using the link component. We have implemented the static or harcoded routing in blog and products page.
+Link accepts a prop replace, if we provide the replace prop for any link. when we use the back button of the browser. instead of taking to previous page.
+it will take you to the '/' page.
+

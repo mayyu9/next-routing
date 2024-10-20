@@ -1,5 +1,6 @@
 // dynamic metadata implementation start
 import { Metadata } from "next";
+// import Link from "next/link";
 
 type props = {
     params : {
@@ -30,6 +31,10 @@ export const generateMetadata = async ({ params }: props): Promise<Metadata> => 
 
 export default function ProductDetailedPage({ params }: props) {
     return(
+        <>
         <h1>Product detail page for product id {params.productId} </h1>
+        {/* <Link href='/'>Back to home</Link> */}
+        </>
+        
     )
 };
