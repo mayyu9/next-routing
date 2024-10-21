@@ -54,3 +54,8 @@ Set Active route:
 We have implemented this on the auth folder. we created a layout.tsx file and added all the auth links as nav links
 usePathname function we use to set the Active link. But in next js  all the links are by default server components.
 so we cannot use the hooks, as they are applicable for client files only. we fix this use "use client" driective.
+
+Navigating Promgramatically:
+For the above scenario, we have implemented order-product page route.
+for demo, assume that we placed an order and after successfull we have to navigate back to home page.
+we achevice this by using the useRouter hooks  
