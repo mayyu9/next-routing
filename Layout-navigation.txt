@@ -50,3 +50,7 @@ Navigation is acheived in nextjs by using the link component. We have implemente
 Link accepts a prop replace, if we provide the replace prop for any link. when we use the back button of the browser. instead of taking to previous page.
 it will take you to the '/' page.
 
+Set Active route:
+We have implemented this on the auth folder. we created a layout.tsx file and added all the auth links as nav links
+usePathname function we use to set the Active link. But in next js  all the links are by default server components.
+so we cannot use the hooks, as they are applicable for client files only. we fix this use "use client" driective.
