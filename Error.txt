@@ -1,0 +1,10 @@
+Error.tsx is a special file, which will wrap the routes inside the page to provide fallback screen.
+
+1. It Automatically wrap a route segment and its nested children in React Error Boundary
+
+2. create error UI tailored to specific segments using the file system hierachy to adjust granularity 
+
+3. isolate errors to affected segments while keeping the rest of the application functional.
+
+4. Add functionality to attempt to recover from an error without a full page reload.
+
