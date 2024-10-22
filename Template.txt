@@ -1,0 +1,25 @@
+if we want to keep some state data in between the components then add a state in the layout.tsx file.
+if we navigate to any other route within that app route. then this state value will be persisted, because 
+while navigation layout.tsx page will not be re-rendered completely. only the portion of the page gets re-rendered, excluding the common portions
+here in the above scenario layout is common for entire route folder.
+
+refer to example in auth.
+1. define a state inside layot file of auth, this value is passed to all the pages in the auth.
+
+Secanrios where we need the entire page to get refreshed. We can make use of template file to acheive this
+
+Templates:
+
+1. Templates are similar to layouts, they wrap each child layout or page
+
+2. But with templates, when a user navigates between routes that share a template, a new instance of the component is mounted,
+    DOM elements are recreated, state is not preserved and effects are re-synchronized.
+
+3. A template can be defined by exporting a default react component from template.jsx or template.tsx
+
+4. similar to layouts, template also should accept a children prop which will render the nested segments in the route.
+
+5. A folder can contain both layout and template file. in this scenario below is the order which it gets rendered
+    .layout
+    . template
+    .page

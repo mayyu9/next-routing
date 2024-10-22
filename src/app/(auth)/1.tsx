@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navLinks = [
     {name: 'Register', href: '/register'},
@@ -8,15 +9,23 @@ const navLinks = [
     {name: 'Forgot Password', href: '/forgot-password'}
 ];
 
-export default function AuthLayout({
+export default function Authtemplate({
     children
 }: {
     children: React.ReactNode
 }) {
 
     const pathName =  usePathname();
+    const [userVal, setUserVal] = useState('')
+
     return(
         <div>
+            <div>
+                <label>
+                    user val: 
+                    <input value={userVal} onChange={e => setUserVal(e.target.value)} />
+                </label>
+            </div>
             {
                 navLinks.map( link => {
                     const isActive = pathName.startsWith(link.href);
