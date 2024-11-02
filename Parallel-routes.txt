@@ -27,4 +27,19 @@ Sub-navigation routes:
 1. Each slot of your dashboard can essentially function as a mini application, complete with its own navigation and state management.
 2. This is especially useful in complex applications such as our dashboard where different sections serve distinct purposes.
 
+unmatched routes in sub-navigation:
+
+Page reload:
+1.next js immediately searches for a default.tsx file within each unmatched slot.
+2. the presence of This file is critical, as it provides the default content that next js will render in the user interface.
+3. if this default.tsx file is missing in any of the unmatched slots for the current route, Next js will render a 404 error.
+
+for the above scenario, navigate to complex-dashboard/archived and then reload the page. it will result in 404 error as there is no default.tsx
+
+default.tsx:
+1. the default.tsx file in next js serves as a fallback to render the content when the framework cannot retrieve a slot's active state from the current URL.
+
+2. You have complete freedom to define the UI fro unmatched routes: you can mirror the content found in page.tsx or craft an entirely custom view.
+
+
 
