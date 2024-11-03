@@ -5,6 +5,9 @@ export default function F4(){
         <>
         <div> F4 component</div>
         <Link href="/f1/f3">F3</Link>
+        {'|'}
+        {" "}
+        <Link href="/about">about</Link>
         </>
     )
 }

@@ -61,3 +61,10 @@ with this intecepted route, when we click on the link, now this intecepted route
 
 intercepting route one level above: (..)f3
 
+intercept convetional:
+1. (.) to match segments on the same level 
+2. (..) to match segments on one level above.
+3. (..)(..) to match two level segements
+4. (...) to match segments from the root level directory.
+
+
