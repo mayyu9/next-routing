@@ -68,3 +68,5 @@ intercept convetional:
 4. (...) to match segments from the root level directory.
 
 
+advanced Routing: Paralle intecepted routing refer photo-feed example
+modal isn't working after implementing the intercept routing.
