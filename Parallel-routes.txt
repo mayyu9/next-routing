@@ -41,5 +41,23 @@ default.tsx:
 
 2. You have complete freedom to define the UI fro unmatched routes: you can mirror the content found in page.tsx or craft an entirely custom view.
 
+Intercepting Routes:
+1. Intercepting routes allow you to intercept or stop the default behaviour to present an alternative view or component when navigating therough the UI,
+    while still preserving the intended route for scenarios like page reload.
+2. this can be useful if you want to show a route while keeping the context of the current page.
 
+example:
+1. on a page there is a login button on click of the login button, it will navigate to the login route changing the entire page and url.
+    using intercept routes, we will launch intercepted login screen UI, where user can login. this will change the url as will, on page reload or url share. it will load in complete page not in the modal.
+
+2. on page if you are browsing the photos, on click of a particular photo, intercept route helps to launch the image in a modal, changing the url for the particular image.
+
+Refer: f1 folder
+
+intercepting route at the same level
+for this example, i have created f1 folder, this will route to f1 component and having link to the f2 component. without the intercepting route it will navigate to f2 component.
+intercepted routes is created by (.)<folder name>
+with this intecepted route, when we click on the link, now this intecepted route will be rendered. on page reload it will navigae to actual f2 component.
+
+intercepting route one level above: (..)f3
 
