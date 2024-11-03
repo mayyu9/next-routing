@@ -2,14 +2,18 @@ export default function CompplexDashboardLayout({
     children,
     users,
     revenue,
-    notifications
+    notifications,
+    login
   }: Readonly<{
     children: React.ReactNode;
     users: React.ReactNode;
     revenue: React.ReactNode;
-    notifications:  React.ReactNode; 
+    notifications:  React.ReactNode;
+    login: React.ReactDOM
  }>) {
-    return (
+  const isLogin = true;
+    return isLogin ? (
+      
         <div>
           {children}
           <div style={{display: 'flex'}}>
@@ -23,5 +27,7 @@ export default function CompplexDashboardLayout({
 
           </div>
         </div>       
-    );
+    ) : (
+      login
+    )
   }
